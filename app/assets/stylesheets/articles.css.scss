@@ -1,0 +1,61 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  background-color:silver
+}
+.notmonth{
+  color:#DEDEDE;
+  background-color:#F8F8F8
+}
+
+.today{
+  color:#EDA;
+  background-color:#246
+}
+
+.calendar{
+  $calendar_height:654px;
+  width:100%;
+  height:$calendar_height;
+  border-collapse: collapse;
+  tr th{
+      width:(100% / 7);
+      height:0;
+      color:green;
+      vertical-align:center;
+      font:{
+        family: "Lucida Grande",arial,helvetica,sans-serif;
+        size: 16pt;
+      }
+      padding:{
+        top:4pt;
+        bottom:4pt;
+      }
+      border:{
+        top:1px solid #393;
+        bottom:3px solid #393;
+      }
+      &:first-child{
+        color:#DC8888;
+      }
+      &:last-child{
+        color:#8888DC;
+      }
+  }
+  td{
+    padding-top:12pt;
+    font:{
+      size:24pt;
+      family:Helvetica;
+    }
+    border:{
+      left:1px dashed #499;
+      right:1px dashed #499;
+      bottom:1px dashed #499;
+    }
+    text-align:center;
+    vertical-align:top;
+
+  }
+}
